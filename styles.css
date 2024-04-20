@@ -1,14 +1,23 @@
+* {
+
+}
+
 body {
    display: flex;
    flex-direction: column;
    font-family: 'roboto', sans-serif;
-   flex: 1 1 auto;
+   flex-grow: 1;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1500px;
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
   background-color: #1f2937;
+  padding: 40px;
 }
 
 .logo {
@@ -27,6 +36,11 @@ font-size: 48px;
   font-weight: extra-bold;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: exrta-bold;
+}
+
 ul {
    display: flex;
    list-style: none;
@@ -40,6 +54,15 @@ ul {
    gap: 16px;
    padding: 16px;
    background-color: #1f2937;
+   align-items: center;
+   margin-bottom: 0%;
+   height: 500px;
+ }
+
+ .main-content {
+  width: 600px;
+  margin: 60px;
+  padding: 50px;
  }
 
  .placeholder {
@@ -48,35 +71,90 @@ ul {
    background-color: #374151;
    padding: 40px;
    color: #f9faf8;
+   height: 200px;
    gap: 16px;
+   margin-right: 50px;
+   width: 400px;
+   justify-content: center;
  }
 
  .section-2 {
    display: flex;
-   flex-direction: column;
-   justify-content: center;
+   justify-content: space-around;
    gap: 16px;
+   align-items: center;
+ }
+
+ .h2 {
+
  }
 
  .boxes {
    display: flex;
    gap: 16px;
+   align-items: flex-end;
+   margin: 50px;
  }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .box {
+  border:#3882f6 2px solid;
+  border-radius: 14px;
+  padding: 50px;
+  width: 100px;
+  height: 100px;
+ }
+
+ .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50px;
+ }
+
+ .section-3 {
+  background-color: #E5E7EB ;
+  margin: 50px;
+  padding: 50px 200px;
+ }
+
+ .quote {
+  font-size: 36px;
+  color: #1f2937;
+ }
+
+ .author {
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 800;  /* Extra Bold */
+ }
+
 
  .section-4 {
    display: flex;
    justify-content: center;
+   align-items: center;
    gap: 16px;
  }
 
  .bluebox {
    background-color: #3882f6;
    color: white;
-   padding-left: 100px;
-   padding-right: 100px;
+   padding-left: 200px;
+   padding-right: 200px;
    display: flex;
    border-radius: 8px;
    align-items: center;
+   margin: 50px;
+   padding: 50px;
+   width: 900px;
  }
 
 .bluebutton {
@@ -89,7 +167,7 @@ ul {
    flex-grow: 0;
    flex-basis: auto;
    padding: 8px 16px;
-   margin: 0px;
+   margin-left: 100px;
    font-weight: 900;
 }
 
@@ -97,11 +175,10 @@ ul {
 	background: none;
 	color: white;
 	border: none;
-	padding: 0;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-   padding: 0px 16px;
+  padding: 0px 16px;
 }
 
 .main-button {
